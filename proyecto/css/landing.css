@@ -1,0 +1,57 @@
+body {
+    background-image: url('/proyecto/imagenes/IGC2.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+.container {
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+}
+
+p{
+    font-size: 45px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px; 
+    padding: 10px 80px;
+}
+
+.buttons a {
+    flex: 1;
+}
+
+.buttons a:first-child {
+    margin-right: 40px; 
+}
+
+.buttons a:last-child {
+    margin-left: 40px; 
+}
+
+footer {
+    background-color: none;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}

@@ -54,7 +54,7 @@ function login() {
                 title: "Credenciales correctas",
                 showConfirmButton: false,
                 //milisegundos equivalen a 5seg
-                timer: 3800,
+                timer: 3500,
                 html: ' <iframe width="350" height="350" src="https://lottie.host/embed/ffa18d40-3326-4d87-b933-5837d3051429/jpEmo2vQl1.json"></iframe>  <br><br><p>¡Un momento!</p>',
 
             }).then(() => {

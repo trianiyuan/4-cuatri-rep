@@ -72,7 +72,7 @@
 /* Header */
 
 .banner1 {
-    background-image: url(../proyecto/imagenes/IGC3.jpg);
+    background-image: url(../imagenes/IGC3.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,7 +80,7 @@
 }
 
 .banner2 {
-    background-image: url(../proyecto/imagenes/IGC4.jpg);
+    background-image: url(../imagenes/IGC4.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
