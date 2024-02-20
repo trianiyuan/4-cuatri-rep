@@ -1,13 +1,22 @@
 /* Barra de Navegación */
 .navbar {
     border-radius: 20px;
+    padding-top: 0.25rem; /* Reducir el padding superior de la barra de navegación */
+    padding-bottom: 0.25rem; /* Reducir el padding inferior de la barra de navegación */
+    height: 60px; /* Reducir la altura de la barra de navegación */
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 5px; /* Ajusta este valor según sea necesario para mover el botón del menú hacia arriba */
 }
 
 .navbar-nav .nav-link {
     color: white;
     text-decoration: none;
     position: relative;
-    margin-left: 30px;
+    margin-right: 25px;
+    font-size: 16px; /* Reducir el tamaño de la fuente para hacer el navbar más delgado */
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -40,6 +49,7 @@
     position: relative;
 }
 
+
 /* Estilos para los enlaces dentro del menú desplegable */
 .dropdown-menu a {
     color: #ffffffcc; /* Cambiar el color del texto a negro */
@@ -59,9 +69,8 @@
 
 .inficon {
     position: absolute;
-    top: -5; /* Alineación en la parte superior */
-    left: 0; /* Alineación en la parte izquierda */
-    margin-left: 25px; /* Margen para separar el icono del borde */
+    top: 11px; /* Alineación en la parte superior */
+    right: 25px; /* Alineación en la parte derecha */
 }
 
 .inficon img {
