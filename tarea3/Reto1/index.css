@@ -1,0 +1,84 @@
+body {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    background-image: url('/tarea3/blossom2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 241, 0.521);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 181, 230, 0.808); /* Hacer el fondo transparente al pasar el ratón */
+}
+
+.container-fluid2 {
+    max-width: 400px;
+    margin: 250px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e2c6c6e3; 
+    box-shadow: none;
+    border: none; 
+}
+
+.usuario{
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+#showPassword {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38.4px; 
+    border-color: #fff;
+    color: #fff;
+}
+
+#showPassword:hover {
+    background-color: #925aa85d; 
+}
+
+.checkbox{
+    font-size: 15px;
+}
+
+footer {
+    background-color: #e2c6c6c0;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}

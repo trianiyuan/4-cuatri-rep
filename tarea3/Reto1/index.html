@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="/tarea3/Reto1/index.css" rel="stylesheet">
+    <link rel="icon" href="faviconlogoinfinity.png">
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid topnavbar">
+                <a class="navbar-brand" href="/tarea3/landing.html">TAREA 3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/tarea3/landing.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Retos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/tarea3/Reto1/index.css">Reto 1</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto2/index.html">Reto 2</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto3/index.html">Reto 3</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto4/index.html">Reto 4</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto5/index.html">Reto 5</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto6/index.html">Reto 6</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto7/index.html">Reto 7</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 8</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 9</a></li>
+                                <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 10</a></li>
+    
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container-fluid2">
+        <form id="loginForm">
+            <div class="text-center mb-3" >
+                <label for="usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese su nombre de usuario" required>
+            </div>
+            
+            <div class="text-center mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required>
+                    <button class="btn btn-outline-secondary" type="button" id="showPassword">Mostrar</button>
+                </div>
+            </div>
+            <!--
+            <div class="text-center mb-3">
+                <label for="confirmarContrasena" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="confirmarContrasena" name="confirmarContrasena" placeholder="Confirme su contraseña" required>
+            </div>
+            -->
+            <div class="checkbox text-center">
+                <lable>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </lable>
+            </div>
+
+            <div class="pt-4"></div>
+
+            <div class="text-center">
+            <a id="btn-login" class="btn btn-outline-light">Ingresar</a>
+            </div>
+
+        </form>
+    </div>
+    
+    <footer>
+        <p><strong>Derechos Reservados &copy; 2024</strong></p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script> 
+
+    </body>
+</html>

@@ -54,11 +54,11 @@ function login() {
                 title: "Credenciales correctas",
                 showConfirmButton: false,
                 //milisegundos equivalen a 5seg
-                timer: 3800,
-                html: ' <iframe width="350" height="350" src="https://lottie.host/645bc63c-e149-4611-bf29-8fd97ad1e30f/Irh67BpeHe.json"></iframe>  <br><br><p>¡Un momento!</p>',
+                timer: 2150,
+                html: ' <iframe width="200" height="200" src="https://lottie.host/embed/645bc63c-e149-4611-bf29-8fd97ad1e30f/Irh67BpeHe.json"></iframe>  <br><br><p>¡Un momento!</p>',
 
             }).then(() => {
-                window.location.href = "landing.html", "blank";
+                window.location.href = "https://ucenfotec.ac.cr/", "blank";
             });
         } else {
             text = "Usuario o contraseña incorrecta.";
@@ -67,5 +67,3 @@ function login() {
         }
     }
 }
-
-
