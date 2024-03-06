@@ -3,11 +3,11 @@
 }
 
 .dropdown-menu{
-    background-color: rgba(243, 190, 243, 0.39);
+    background-color: rgba(243, 190, 243, 0.623);
 }
 
 .dropdown-item:hover {
-    background-color: #e2c6c6c0 !important; /* Hacer el fondo transparente al pasar el ratón */
+    background-color: #e2c6c6e5 !important; /* Hacer el fondo transparente al pasar el ratón */
 }
 
 .banner1 {

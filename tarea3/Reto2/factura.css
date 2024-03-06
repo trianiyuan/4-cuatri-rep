@@ -1,6 +1,6 @@
 body {
     /*font-family: 'Fira Sans', sans-serif;*/
-    background-image: url('/tarea3/blossom2.jpg'); 
+    background-color: #664759; 
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -31,48 +31,32 @@ body {
     background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
 }
 
-.container-fluid2 {
-    max-width: 390px;
-    margin: 250px auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #e2c6c6e3; 
-    box-shadow: none;
-    border: none; 
+.container-fluid1{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.container-fluid2 form div {
-    margin-bottom: 1px; /* Ajusta este valor según sea necesario */
+/* Cambiar el color de fondo y el color del texto de los botones */
+.btn-primary,
+.btn-secondary {
+    background-color: #802150;
+    color: #fff; /* Texto blanco */
+    border-color: #810041; /* Borde rosa */
 }
 
-
-.usuario{
-    text-align: center;
+/* Cambiar el color de fondo de los botones al hacer hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color:  #b93c7b; /* Nuevo color al hacer hover */
+    border-color: #810041; /* Nuevo color del borde al hacer hover */
 }
 
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
-    margin-bottom: 10px;
-}
-
-#showPassword {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin-top: 1px;
-    height: 42px; 
-    border-color: #fff;
-    color: #fff;
-}
-
-#showPassword:hover {
-    background-color: #925aa85d; 
-}
-
-.checkbox{
-    font-size: 15px;
+/* Cambiar el color de fondo de los botones al hacer clic */
+.btn-primary:active,
+.btn-secondary:active {
+    background-color: #99004d; /* Nuevo color al hacer clic */
+    border-color: #99004d; /* Nuevo color del borde al hacer clic */
 }
 
 footer {

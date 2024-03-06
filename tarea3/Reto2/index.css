@@ -1,0 +1,91 @@
+body {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    background-color: #664759; 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 212, 0.24);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
+}
+.container-fluid1 {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e2c6c63f; 
+    box-shadow: none;
+    border: none; 
+}
+
+.container-fluid1 h1{
+    padding-top: 20px;
+}
+
+.container-fluid2 {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e2c6c6e3; 
+    box-shadow: none;
+    border: none; 
+}
+
+/* Cambiar el color de fondo y el color del texto de los botones */
+.btn-primary,
+.btn-secondary {
+    background-color: #802150;
+    color: #fff; /* Texto blanco */
+    border-color: #810041; /* Borde rosa */
+}
+
+/* Cambiar el color de fondo de los botones al hacer hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color:  #b93c7b; /* Nuevo color al hacer hover */
+    border-color: #810041; /* Nuevo color del borde al hacer hover */
+}
+
+/* Cambiar el color de fondo de los botones al hacer clic */
+.btn-primary:active,
+.btn-secondary:active {
+    background-color: #99004d; /* Nuevo color al hacer clic */
+    border-color: #99004d; /* Nuevo color del borde al hacer clic */
+}
+
+footer {
+    background-color: #e2c6c6c0;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}

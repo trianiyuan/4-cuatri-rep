@@ -1,22 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-
-    <!--Ajuste de pantalla responiva, para que pueda utilizarse en un celular y se ajuste acorde a la pantalla-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tarea #3</title>
-
-    <!--CDN carga el framework BOOSTRAP, sin este no se podrian usar las clases-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="/tarea3/landing.css" rel="stylesheet">
+    <link href="/tarea3/Reto2/factura.css" rel="stylesheet">
     <link rel="icon" href="/tarea3/favicon.png">
-    
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/tarea3/landing.html">TAREA 3</a>
+        <div class="container-fluid topnavbar">
+            <a class="navbar-brand" href="/tarea3/Reto2/index.html">TAREA 3</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,41 +34,39 @@
                             <li><a class="dropdown-item" href="/tarea2/Reto6/index.html">Reto 6</a></li>
                             <li><a class="dropdown-item" href="/tarea2/Reto7/index.html">Reto 7</a></li>
                             <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 8</a></li>
-
+                            <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 9</a></li>
+                            <li><a class="dropdown-item" href="/tarea2/Reto8/index.html">Reto 10</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--ESTRUCTURA SEMANTICA -->
-    <header class="container-fluid1 banner1">
-        <div class="pt-4"></div>
-        <div class="pt-4"></div>
-        <h1 class="display-1 text-center text-white titulo1">¡Bienvenido!</h1>
-        <div class="pt-4"></div>
-        <div class="pt-4"></div>
-    </header>
     
-    <section class="container-fluid2 text-white fondo1 text-center">
-        <div class="pt-4"></div>
-        <h3 class="container-fluid titulo2">A la tarea número 3.</h3>
-        <div class="pt-4"></div>
-    </section>
 
-    <section class="container-fluid4 banner2">
-        <div class="pt-4"></div>
-        <div class="pt-4"></div>
-        <div class="pt-4"></div>
-    </section>
-
-    <footer class="fondo1">
-        <div class="container">
-        <h2 class="text-center text-white">Derechos Reservados 2024</h2>
+    <div class="container-fluid1 text-left">
+        <div class="card p-4">
+            <h1 class="mb-4">Factura</h1>
+            <p>Fecha: <span id="fecha"></span></p>
+            <p>Cliente: <span id="cliente"></span></p>
+            <p>Artículo: <span id="articulo"></span></p>
+            <p>Cantidad: <span id="cantidad"></span></p>
+            <p>Precio: <span id="precio"></span></p>
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>IVA (13%): <span id="iva"></span></p>
+            <p>Servicio (5%): <span id="servicio"></span></p>
+            <p>Total a Pagar: <span id="total"></span></p>
+    
+            <div class="btn-group" role="group" aria-label="Botones de acción">
+                <button id="enviarCorreo" class="btn btn-primary me-2 rounded">Enviar por Correo</button>
+                <button id="imprimir" class="btn btn-secondary ms-2 rounded">Imprimir</button>
+            </div>            
         </div>
-    </footer>
-
-    <!-- CDN carga la interactividad de componentes, antes del cierre de una pagina -->
+    </div>
+    
+    <!-- Importante: Incluye el script de Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="factura.js"></script>
 </body>
 </html>
