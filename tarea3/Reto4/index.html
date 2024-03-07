@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="/tarea3/Reto4/index.css" rel="stylesheet">
     <link rel="icon" href="/tarea3/favicon.png">
-    <body>
+    <body class="shadow-box">
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid topnavbar">
@@ -42,12 +42,70 @@
             </div>
         </nav>
 
+            <header>
+                <div class="container mb-5">
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <div class="ms-5 text-light">
+                    <h1 class="text-center">¡Nuestros Videojuegos Disponibles!</h1>
+                    
+                    </div>
+                </div>
+                </div>
+            </header>
+            
         
+            
+            <main>
+                <div class="container">
+            
+                <div class="row gx-5 gy-4 mt-4">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                    <section>
+                        <div>
+                        <p>Los videojuegos han evolucionado hasta convertirse en una forma de entretenimiento sin igual. Con gráficos de vanguardia, mundos inmersivos y experiencias multijugador de alta calidad, estas plataformas ofrecen una experiencia de juego incomparable. Desde la portabilidad y versatilidad hasta el poderío gráfico y las amplias bibliotecas de juegos disponibles, cada plataforma ofrece algo único para satisfacer los gustos de todos los jugadores.</p>
+                        <p>El máximo de videojuegos se pueden disfrutar en las siguientes consolas:</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                        <select class="form-select" id="consolas">
+                            <option value="" selected disabled>Seleccione una consola</option>
+                            <option value="1">PS5</option>
+                            <option value="2">PC</option>
+                            <option value="3">Nintendo Switch</option>
+                            <option value="4">Xbox</option>
+                        </select>
+                        </div>
+                        <div class="mt-4">
+                        <button class="btn btn-light" id="btn-clean">Reiniciar</button>
+                        </div>
+                    </section>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                    <div class="d-flex justify-content-center mb-2" id="output-img"></div>
+                    <div class="text-center fst-italic" id="output-txt"></div>
+                    <div class="mt-4" id="game-options"></div>
+                    </div>
+                </div>
+                </div>
+            </main>
+
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
     
-    <footer>
+    <footer class="shadow-box">
         <p><strong>Derechos Reservados &copy; 2024</strong></p>
     </footer>
 
+
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- libreria SWEETALERT-->
