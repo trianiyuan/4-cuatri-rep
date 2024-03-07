@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="/tarea3/Reto2/index.css" rel="stylesheet">
+    <link href="/tarea3/Reto8/index.css" rel="stylesheet">
     <link rel="icon" href="/tarea3/favicon.png">
     <body>
 
@@ -42,66 +42,11 @@
             </div>
         </nav>
 
-        <div class="container-fluid1 text-center">
-            <h1 class="mb-4">Información General:</h1>
-        </div>
         
-        <form class="container-fluid2 text-left" id="facturaForm" action="factura.html" method="GET">
-            <div class="mb-3">
-                <label for="nombreCliente" class="form-label text">Nombre del Cliente:</label>
-                <input id="nombreCliente" type="text" name="nombreCliente" class="form-control text" required>
-            </div>
-            <div class="mb-3">
-                <label for="articulo" class="form-label">Artículo Comprado:</label>
-                <input id="articulo" type="text" name="articulo" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="cantidad" class="form-label">Cantidad:</label>
-                <input id="cantidad" type="number" min="1" name="cantidad" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="precio" class="form-label">Precio:</label>
-                <input id="precio" type="number" min="0.01" step="0.01" name="precio" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Generar Factura</button>
-        </form>
-
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-        
-
-            <script>
-                function enviarDatos(event) {
-                    event.preventDefault(); // Prevenir el envío del formulario por defecto
-            
-                    // Obtener los valores del formulario
-                    var nombreCliente = document.getElementById("nombreCliente").value;
-                    var articulo = document.getElementById("articulo").value;
-                    var cantidad = document.getElementById("cantidad").value;
-                    var precio = document.getElementById("precio").value;
-            
-                    // Construir la URL con los parámetros de la factura
-                    var url = "factura.html?";
-                    url += "nombreCliente=" + encodeURIComponent(nombreCliente);
-                    url += "&articulo=" + encodeURIComponent(articulo);
-                    url += "&cantidad=" + encodeURIComponent(cantidad);
-                    url += "&precio=" + encodeURIComponent(precio);
-            
-                    // Redirigir a la página de factura con los parámetros
-                    window.location.href = "/tarea3/reto2/factura.html", "blank";
-                }
-            </script>
-    
-        <script src="js/factura.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-    </body>
     
     <footer>
         <p><strong>Derechos Reservados &copy; 2024</strong></p>
     </footer>
-
-    <script src="index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     

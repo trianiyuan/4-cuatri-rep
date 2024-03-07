@@ -1,0 +1,72 @@
+body {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    background-color: #ffcaedb7; 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 212, 0.612);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 169, 225, 0.919); /* Hacer el fondo transparente al pasar el ratón */
+}
+
+
+span {
+    color: black;
+}
+
+
+.btn-custom {
+    background-color: #d53e91dc;
+    border-color: #fff;
+    color: #fff;
+}
+
+
+.titulo0 {
+    background-color: rgba(213, 65, 119, 0.808); 
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.titulo1 {
+    background-color: rgba(213, 65, 119, 0.808); 
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+
+footer {
+    background-color: #e2c6c6c0;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}
