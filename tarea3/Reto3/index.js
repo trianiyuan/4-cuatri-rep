@@ -13,3 +13,10 @@ document.getElementById('prevEstrenos').addEventListener('click', function() {
 document.getElementById('nextEstrenos').addEventListener('click', function() {
     $('#carouselCartelera').carousel('next');
 });
+
+
+function redirectToCinema() {
+    var selectElement = document.getElementById("cinemaSelect");
+    var selectedUrl = selectElement.options[selectElement.selectedIndex].value;
+    window.location.href = selectedUrl;
+}

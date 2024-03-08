@@ -64,15 +64,13 @@
                 <h1 class="text-center titulo0">Cinemark Costa Rica</h1>
             <div class="pt-2"></div>
                 <!-- Dropdown menu -->
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Selecciona el Cine de tu Preferencia
-                    </button>
-                    <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton" style="position: absolute; left: 50%; transform: translateX(-50%);">
-                        <li><a class="dropdown-item " href="https://www.cinemarkca.com/costa-rica/peliculas?tag=2204&cine=costa_rica_-_citymall_alajuela&no-reminder=true">Cinemark CityMall Alajuela</a></li>
-                        <li><a class="dropdown-item" href="https://www.cinemarkca.com/costa-rica/peliculas?tag=773&cine=costa_rica_-_multiplaza_curridabat&no-reminder=true">Cinemark Multiplaza Curridabat</a></li>
-                        <li><a class="dropdown-item" href="https://www.cinemarkca.com/costa-rica/peliculas?tag=770&cine=costa_rica_-_multiplaza_escazu&no-reminder=true">Cinemark Multiplaza Escazú</a></li>
-                    </ul>
+                <div class="form-group text-center">
+                    <label for="cinemaSelect" class="text-black">Selecciona el Cine de tu Preferencia</label>
+                    <select class="form-control custom-select" id="cinemaSelect" onchange="redirectToCinema()">
+                        <option value="https://www.cinemarkca.com/costa-rica/peliculas?tag=2204&cine=costa_rica_-_citymall_alajuela&no-reminder=true">Cinemark CityMall Alajuela</option>
+                        <option value="https://www.cinemarkca.com/costa-rica/peliculas?tag=773&cine=costa_rica_-_multiplaza_curridabat&no-reminder=true">Cinemark Multiplaza Curridabat</option>
+                        <option value="https://www.cinemarkca.com/costa-rica/peliculas?tag=770&cine=costa_rica_-_multiplaza_escazu&no-reminder=true">Cinemark Multiplaza Escazú</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -146,7 +144,9 @@
         </div>
     </section> 
         
-    
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
+    <div class="pt-5"></div>
     <footer>
         <p><strong>Derechos Reservados &copy; 2024</strong></p>
     </footer>
