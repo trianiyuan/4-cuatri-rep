@@ -62,4 +62,3 @@ function limpiarDatos() {
     document.getElementById('mes2').value = '';
     document.getElementById('horas2').value = '';
 }
-
