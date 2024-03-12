@@ -1,0 +1,93 @@
+body {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    background-color: #bfbac15d; 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 212, 0.24);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #333; 
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    color: #ecf0f1; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+hr {
+    border: 1px solid #3498db;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+
+
+footer {
+    background-color: #e2c6c6c0;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}
