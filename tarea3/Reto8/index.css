@@ -1,6 +1,5 @@
 body {
-    /*font-family: 'Fira Sans', sans-serif;*/
-    background-color: #bfbac15d; 
+    background-image: url(imagenes/fondo.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -32,50 +31,47 @@ body {
 }
 
 h1 {
-    color: #3498db;
+    color: #b30657;
     margin-bottom: 20px;
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #ecf0f1;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-input, select, button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #3498db;
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 5px;
     border-radius: 5px;
-    background-color: #ecf0f1;
-    color: #333; 
-    outline: none;
+    border: 1px solid #770086;
+    background-color: #9e3b7dd0;
+    color: #fff;
 }
 
-button {
-    background-color: #3498db;
-    color: #ecf0f1; 
+#colorbutton {
+    padding: 10px 20px;
+    background-color: #701853b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #2980b9;
+#colorbutton:hover {
+    background-color: #920463;
 }
-
-hr {
-    border: 1px solid #3498db;
-    width: 100%;
-    margin: 20px 0;
-}
-
-#resultado {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #ecf0f1;
-    font-weight: bold;
-}
-
 
 
 footer {
