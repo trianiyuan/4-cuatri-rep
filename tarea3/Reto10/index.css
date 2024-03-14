@@ -31,6 +31,87 @@ body {
     background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(imagenes/fondo.jpg);
+}
+
+.fondo1 {
+    background-color: #7979795d;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    padding-bottom: 40px;
+    border-radius: 900px;
+
+}
+
+.logo {
+    width: 270px;
+    padding-top: 30px;
+}
+.searchInput {
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #5f5f5fd2;
+    outline: none;
+    padding: 5px 15px;
+    color: #3f3f3f;
+    border-radius: 5px;
+    border-right: none;
+}
+.searchInput::placeholder {
+    color: #000000c2;
+    font-size: 14px;
+}
+.searchIcon {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    border-right: 2px solid #3f3f3fb4;
+}
+.searchIcon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.input-group {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.form-control:focus {
+    color: #333333;
+    background-color: transparent;
+    border-color: #5f5f5fd2;
+    outline: 0;
+    box-shadow: none;
+}
+.resultado {
+    color: #fff;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.card-text {
+    color: #555;
+}
+
 
 
 footer {
