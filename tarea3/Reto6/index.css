@@ -36,14 +36,14 @@ h1 {
 }
 
 .banner {
-    background-image: url("/tarea3/Reto6/imagenes/banner.jpg");
+    background-image: url("imagenes/banner.jpg");
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .banner1 {
-    background-image: url("/tarea3/Reto6/imagenes/banner1.jpg");
+    background-image: url("imagenes/banner1.jpg");
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;

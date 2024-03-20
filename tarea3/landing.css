@@ -11,7 +11,7 @@
 }
 
 .banner1 {
-    background-image: url(../tarea3/blossom.jpg);
+    background-image: url(blossom.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,7 +37,7 @@
     padding-top: 15px;
 }
 .banner2 {
-    background-image: url(../tarea3/blossom2.jpg);
+    background-image: url(blossom2.jpg);
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
