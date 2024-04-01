@@ -10,42 +10,55 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 fixed-top top-0 start-0 w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-10 fixed-top top-0 start-0 w-100">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
-                <img src="/proyecto/imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
+                <img src="imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#news">Noticias</a>
+                        <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white menuSectionOne" href="">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white menuSectionTwo" href="">Consultas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white menuSectionThree" href="#">Recorrido 360</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white menuSectionFour" href="#news">Paquetes</a>
                         <ul class="dropdown-menu text-center">
-                            <li><a href="#">Subcategoría 1</a></li>
-                            <li><a href="#">Subcategoría 2</a></li>
-                            <li><a href="#">Subcategoría 3</a></li>
+                            <li><a class="packageOne" href="#">Paquete Infinito #1</a></li>
+                            <li><a class="packageTwo" href="#">Paquete Infinito #2</a></li>
+                            <li><a class="packageThree" href="#">Paquete VIP Infinito</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Productos</a>
-                        <ul class="dropdown-menu text-center">
-                            <li><a href="#">Subcategoría 1</a></li>
-                            <li><a href="#">Subcategoría 2</a></li>
-                            <li><a href="#">Subcategoría 3</a></li>
-                        </ul>
+                        <a class="nav-link text-white menuSectionFive" href="">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="landing.html">Landing</a>
+                        <a class="nav-link text-white menuSectionSix" href="">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="login.html">Login</a>
+                        <a class="nav-link text-white menuSectionSeven" href="#">Sobre Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Sobre Nosotros</a>
-                    </li>
+                    <div class="langWrap d-flex">
+
+                        <li class="nav-item">
+                            <a href="#" language="espanish" class="active"><img class="img-fluid mr-3" src="imagenes/es.webp" alt="Español"></a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a href="#" language="english"> <img class="img-fluid" src="imagenes/eu.webp" alt="Ingles"></a>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -61,22 +74,23 @@
     
     <section class="container-fluid2 text-white fondo1">
         <hr><div class="pt-4"></div>
-        <h3 class="container-fluid titulo2">Un espacio donde llevamos lo virtual a lo fisíco con tecnología de vanguardia desde las computadoras hasta el sonido y video. Queremos que cualquier equipo amateur o profesional de Costa Rica o Latinoamérica puedan usar las instalaciones para entrenar, realizar bootcamps, presentaciones, etc.</h3>
+        <h3 class="container-fluid titulo2 tp2">Un espacio donde llevamos lo virtual a lo fisíco con tecnología de vanguardia desde las computadoras hasta el sonido y video. Queremos que cualquier equipo amateur o profesional de Costa Rica o Latinoamérica puedan usar las instalaciones para entrenar, realizar bootcamps, presentaciones, etc.</h3>
         <div class="pt-4"></div>
         <hr>
     </section>
 
     <section class="container-fluid3">
-        <h2 class="text-center text-white titulo3 pb-5">Nuestros Servicios</h2>
+        <h2 class="text-center text-white titulo3 pb-5 ourServices">Nuestros Servicios</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center text-white">
-                        <h5>Consolas</h5>
+                        <h5 class="consoles">Consolas</h5>
                     </div>
-                    <p class="text-center text-white">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+                    <p class="text-center text-white descriptionConsoles">
+                        Nuestras consolas más populares son PlayStation de Sony, Xbox de Microsoft y Nintendo Switch. Ofrecen una experiencia de juego simplificada y optimizada, con hardware y software específicamente diseñados para juegos.
                     </p>
+                    <img src="imagenes/nintendo.jpg" alt="Nintendo Switch">
                 </div>
 
                 <div class="col-md-4">
@@ -84,84 +98,124 @@
                         <i class="uil uil-android"></i>
                         <h5>PC</h5>
                     </div>
-                    <p class="text-center text-white">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+                    <p class="text-center text-white pb-4 descriptionComputer">
+                        Nuestras PC gamers suelen tener hardware potente, como procesadores rápidos, tarjetas gráficas avanzadas y gran cantidad de memoria RAM. Contamos con más de 30 PC en nuestras instalaciones. 
                     </p>
+                    <img src="imagenes/pcgamer.jpg" alt="PC Gamer">
                 </div>
 
                 <div class="col-md-4">
                     <div class="text-center text-white">
                         <i class="uil uil-android"></i>
-                        <h5>Simulador</h5>
+                        <h5 class="simulator">Simulador</h5>
                     </div>
-                    <p class="text-center text-white">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+                    <p class="text-center text-white pb-3 descriptionSimulator">
+                        Nuestros simuladores son sistemas especializados que recrean la experiencia de conducir un automóvil de carreras en un entorno virtual. Contamos con 3 en nuestras instalaciones.
                     </p>
+                    <img src="imagenes/simracing.jpg" alt="Sim Racing">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container-fluid4 banner2">
-        <h3 class="text-center titulo2">"From pixels to glory"</h3>
+        <h3 class="text-center titulo2 title2">"De los píxeles a la gloria"</h3>
     </section>
+    
 
     <section class="container-fluid5">
-        <h2 class="text-center text-white titulo3 pb-5">Paquetes de Cumpleaños</h2>
+        <h2 class="text-center text-white titulo3 pb-5 ourAreas">Nuestras Áreas</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
                     <!--en sm dispositivos pequenos salen 2 columnas, en md 6 tambien salen 2 y en lg grandes salen 4 columnas-->
                     <div class="text-center">
-                        <img src="imagenes/1.jpg" alt="imagen1" class="img-fluid">
-                        <h5 class="pt-4 text-white">Ejemplo</h5>
+                        <img src="imagenes/arena.jpg" alt="imagen1" class="img-fluid">
+                        <h5 class="pt-4 text-white arenaGaming">Arena Gaming</h5>
                         <hr>
                     </div>
-                    <p class="text-center text-white">
-                        Ejemplo
+                    <p class="text-center text-white descriptionArena">
+                        Esta área es especial para los verdaderos gamers. ¿Tú eres uno de ellos?
+                        Disponemos de 10 computadoras gamers profesionales para los torneos que quieras hacer con tus amigos de Valorant, Fortnite, League of Legends, Apex y Rocket League.
                     </p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="text-center">
-                        <img src="imagenes/2.jpg" alt="imagen2" class="img-fluid">
-                        <h5 class="text-white pt-4">Ejemplo</h5>
+                        <img src="imagenes/areaconsolas.jpg" alt="imagen2" class="img-fluid">
+                        <h5 class="text-white pt-4 areaConsoles">Área de Consolas</h5>
                         <hr> <!--linea horizontal sutil para poner debajo del titulo-->
                     </div>
-                    <p class="text-center text-white">
-                        Ejemplo                    
+                    <p class="text-center text-white descriptionConsoles2">
+                        ¡Dónde puedes disfrutar tus horas de juego con tus juegos favoritos! <br> Como en Ps5 Street Fighter, Tekken, FIFA, Fall Guys, en Xbox Gang Beast, Mortal Kombat, It takes Two. En Nintendo Switch Mario Kart, Just Dance, Mario Party y ¡muchos más!                     
                     </p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="text-center">
-                        <img src="imagenes/3.jpg" alt="imagen3" class="img-fluid">
-                        <h5 class="text-white pt-4">Ejemplo</h5>
+                        <img src="imagenes/lounge.jpg" alt="imagen3" class="img-fluid">
+                        <h5 class="text-white pt-4 lounge">Sala Lounge</h5>
                         <hr>
                     </div>
-                    <p class="text-center text-white">
-                        Ejemplo
-                    </p>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <img src="imagenes/4.jpg" alt="imagen4" class="img-fluid">
-                        <h5 class="text-white pt-4">Ejemplo</h5>
-                        <hr>
-                    </div>
-                    <p class="text-center text-white">
-                        Ejemplo
+                    <p class="text-center text-white descriptionLounge">
+                        La sala especial para el cumpleañero, aquí podemos disfrutar con tranquilidad el momento de la comida, cantar cumpleaños y probar las golosinas que tanto esperan.
                     </p>
                 </div>
             </div>
+        </div>
+        
+    </section>
+
+    <section class="container-fluid fondo1">
+        <a href="recorrido.html" class="btn btn-outline-danger botonrecorrido">Ver Recorrido</a>
+    </section>
+
+    <section class="fondo1">
+        <div  class="container pt-4">
+            <h1 class="text-white titleForm">Formulario de Contacto</h1>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name" class="text-white pb-3 nameForm" style="display: block; text-align: left;">Nombre:</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback" >Por favor, introduce tu nombre.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-white pb-3 pt-3 emailForm" style="display: block; text-align: left;">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">Por favor, introduce una dirección de correo electrónico válida.</div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-white pb-3 pt-3 messageForm" style="display: block; text-align: left;">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Por favor, introduce tu mensaje.</div>
+                </div>
+                <button type="button" onclick="sent()" class="btn btn-outline-danger mt-4 sendForm">Enviar</button>
+            </form>
         </div>
     </section>
 
 
     <footer class="container-fluid2 fondo1">
-        <h2 class="text-center">Derechos Reservados &copy; 2024</h2>
+        <h2 class="text-center footerEng">Derechos Reservados &copy; 2024</h2>
     </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script> 
+
+    <script src="js/form.js"></script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

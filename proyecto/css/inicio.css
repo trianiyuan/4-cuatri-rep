@@ -26,7 +26,7 @@
     bottom: -2px;
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.582);
+    background-color: rgb(255, 255, 255);
 }
 
 .dropdown-menu {
@@ -35,10 +35,10 @@
     top: calc(100% + 5px);
     left: 0;
     z-index: 1000;
-    background-color: rgba(56, 56, 56, 0.5);
+    background-color: rgba(10, 12, 34, 0.849);
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 
 .nav-item:hover .dropdown-menu {
@@ -98,6 +98,12 @@
 
 .titulo1{
     font: bold 3em Arial, sans-serif;
+}
+
+.nav-item img{
+    height: 1.5625rem;
+    margin-top: 9px;
+    margin-right: 10px
 }
 
 .titulo2{
@@ -170,6 +176,17 @@ hr {
     background-color: #131322;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.titleForm{
+    font: bold 3em Arial, sans-serif;
+}
+
+.botonrecorrido{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {

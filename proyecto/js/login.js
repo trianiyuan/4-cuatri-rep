@@ -53,9 +53,8 @@ function login() {
                 //icon: "success"
                 title: "Credenciales correctas",
                 showConfirmButton: false,
-                //milisegundos equivalen a 5seg
                 timer: 3500,
-                html: ' <iframe width="350" height="350" src="https://lottie.host/embed/ffa18d40-3326-4d87-b933-5837d3051429/jpEmo2vQl1.json"></iframe>  <br><br><p>¡Un momento!</p>',
+                html: ' <iframe width="350" height="350" src="https://lottie.host/embed/645bc63c-e149-4611-bf29-8fd97ad1e30f/Irh67BpeHe.json"></iframe>  <br><br><p>¡Un momento!</p>',
 
             }).then(() => {
                 window.location.href = "landing.html", "blank";

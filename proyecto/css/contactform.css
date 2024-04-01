@@ -1,0 +1,105 @@
+body {
+    background-color: #032b1d; 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 212, 0.24);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
+}
+
+.banner {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    background-position: center;
+    background-image: url('imagenes/fondo.jpg');
+}
+
+.info {
+    padding: 100px 50px; /* Ajuste del padding para hacerlo más fluido */
+    margin-top: 100px;
+}
+
+h3{
+    letter-spacing: 2px;
+    padding-top: 20px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+.encuesta{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.colorLabel{
+    color: rgb(0, 207, 111);
+}
+.checkbox{
+    margin-left: 10px;
+}
+.inputs{
+    padding: 20px;
+} 
+.checks{
+    padding: 20px;
+}
+.radios{
+    padding: 20px;
+}
+
+.botonEnviar{
+    margin-top: 50px;
+    text-align: center;
+}
+.boton{
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(137, 252, 217);
+    color: white;
+    border-radius: 3px;
+}
+.Resultados{
+    margin-top: 50px;
+    text-align: center;
+}
+p{
+    font-size: 17px;
+}
+
+
+footer {
+    background-color: #e2c6c6c0;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}
