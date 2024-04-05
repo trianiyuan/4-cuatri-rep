@@ -24,6 +24,9 @@ const descriptionConsoles = document.querySelector('.descriptionConsoles');
 const descriptionComputer = document.querySelector('.descriptionComputer');
 const simulator = document.querySelector('.simulator')
 const descriptionSimulator = document.querySelector('.descriptionSimulator');
+const suscribeText = document.querySelector('.suscribeText')
+const insideEmail = document.querySelector('.insideEmail');
+const suscribeBtn = document.querySelector('.suscribeBtn');
 const title2 = document.querySelector('.title2');
 const ourAreas = document.querySelector('.ourAreas')
 const arenaGaming = document.querySelector('.arenaGaming');
@@ -61,6 +64,9 @@ link.forEach(r => {
         descriptionComputer.textContent = changeLanguage[attr].descriptionComputer;
         simulator.textContent = changeLanguage[attr].simulator;
         descriptionSimulator.textContent = changeLanguage[attr].descriptionSimulator;
+        suscribeText.textContent = changeLanguage[attr].suscribeText;
+        insideEmail.placeholder  = changeLanguage[attr].insideEmail;
+        suscribeBtn.textContent = changeLanguage[attr].suscribeBtn;
         title2.textContent = changeLanguage[attr].title2;
         ourAreas.textContent = changeLanguage[attr].ourAreas;
         arenaGaming.textContent = changeLanguage[attr].arenaGaming;
@@ -103,6 +109,9 @@ let changeLanguage = {
         "descriptionComputer": "Nuestras PC gamers suelen tener hardware potente, como procesadores rápidos, tarjetas gráficas avanzadas y gran cantidad de memoria RAM. Contamos con más de 30 PC en nuestras instalaciones. ",
         "simulator": "Simulador",
         "descriptionSimulator": "Nuestros simuladores son sistemas especializados que recrean la experiencia de conducir un automóvil de carreras en un entorno virtual. Contamos con 3 en nuestras instalaciones.",
+        "suscribeText": "¡Recibe las novedades de nuestros torneos y eventos próximos en el IGC!",
+        "insideEmail": "Ingresa tu correo electrónico",
+        "suscribeBtn": "Suscribirse",
         "title2": "De los píxeles a la gloria",
         "ourAreas": "Nuestras Áreas",
         "arenaGaming": "Árena Gaming",
@@ -141,6 +150,9 @@ let changeLanguage = {
         "descriptionComputer": "Our gaming PCs usually have powerful hardware, such as fast processors, advanced graphics cards, and large amounts of RAM. We have more than 30 PCs in our facilities.",
         "simulator": "Simulator",
         "descriptionSimulator": "Our simulators are specialized systems that recreate the experience of driving a racing car in a virtual environment. We have 3 in our facilities.",
+        "suscribeText": "¡Receive news about our upcoming tournaments and events at IGC!",
+        "insideEmail": "Type your email address",
+        "suscribeBtn": "Subscribe",
         "title2": "From pixels to glory",
         "descriptionTwo": "Responsive website development Compatible with Smartphone and Tablet mobile devices.",
         "ourAreas": "Our Areas",

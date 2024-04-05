@@ -63,8 +63,8 @@
 
 .fixed-icon {
     position: fixed;
-    top: 15px; /* Puedes ajustar la posición vertical según necesites */
-    left: 00px; /* Puedes ajustar la posición horizontal según necesites */
+    top: 15px; /* ajustar la posición vertical según necesites */
+    left: 00px; /* ajustar la posición horizontal según necesites */
 }
 
 .inficon {
@@ -166,6 +166,19 @@ hr {
     background-color: #131322;
 }
 
+.insideEmail {
+    width: 300px; 
+    border-radius: 8px;
+}
+
+.suscribeText {
+    font-size: 26px;
+}
+
+.sucriptionForm{
+    background-color: #131322
+}
+
 .container-fluid4 {
     background-color: #131322;
     padding-top: 140px;
@@ -180,6 +193,10 @@ hr {
 
 .titleForm{
     font: bold 3em Arial, sans-serif;
+}
+
+.input-error {
+    border: 3px solid red;
 }
 
 .botonrecorrido{

@@ -1,3 +1,21 @@
+// Obtener los elementos de entrada
+let name_input = document.getElementById("name");
+let email_input = document.getElementById("email");
+let message_input = document.getElementById("message");
+
+// Escuchar el evento input en cada campo de entrada
+name_input.addEventListener('input', removeInputError);
+email_input.addEventListener('input', removeInputError);
+message_input.addEventListener('input', removeInputError);
+
+// Función para eliminar la clase input-error cuando el usuario comience a escribir en el campo
+function removeInputError(event) {
+    if (event.target.value !== "") {
+        event.target.classList.remove("input-error");
+    }
+}
+
+// Función para enviar el formulario y validar los campos
 function sent() {
     let name_input = document.getElementById("name").value;
     let email_input = document.getElementById("email").value;
@@ -10,11 +28,11 @@ function sent() {
     let input_ids = ["name", "email", "message"];
 
     for (let i = 0; i < inputs.length; i++) {
-        document.getElementById(input_ids[i]).classList.remove("error");
+        document.getElementById(input_ids[i]).classList.remove("input-error");
         if (inputs[i] === "") {
             text = "Los campos requeridos no pueden estar vacíos.";
             validation_alert(text);
-            document.getElementById(input_ids[i]).classList.add("error");
+            document.getElementById(input_ids[i]).classList.add("input-error");
             error_count++;
         }
     }
@@ -30,6 +48,8 @@ function sent() {
         });
     }
 }
+
+
 
 
 function validation_alert(ptext) {
