@@ -1,0 +1,221 @@
+/* Barra de Navegación */
+.navbar {
+    border-radius: 20px;
+    padding-top: 0.25rem; /* Reducir el padding superior de la barra de navegación */
+    padding-bottom: 0.25rem; /* Reducir el padding inferior de la barra de navegación */
+    height: 60px; /* Reducir la altura de la barra de navegación */
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 5px; /* Ajusta este valor según sea necesario para mover el botón del menú hacia arriba */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-right: 25px;
+    font-size: 16px; /* Reducir el tamaño de la fuente para hacer el navbar más delgado */
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(10, 12, 34, 0.849);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-menu a {
+    color: #ffffffcc; /* Cambiar el color del texto a negro */
+    text-decoration: none; /* Eliminar el subrayado predeterminado */
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.fixed-icon {
+    position: fixed;
+    top: 15px; /* ajustar la posición vertical según necesites */
+    left: 00px; /* ajustar la posición horizontal según necesites */
+}
+
+.inficon {
+    position: absolute;
+    top: 11px; /* Alineación en la parte superior */
+    right: 25px; /* Alineación en la parte derecha */
+}
+
+.inficon img {
+    width: 25px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2{
+    font-size: 18px;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.shadow-box {
+    box-shadow: inset 0 0 0 400vw rgba(0, 0, 0, 0.623);
+}
+
+.container-fluid .topnavbar{
+    padding: 20px;
+}
+
+.topnavbar {
+    background-color: #e2c6c6c0 !important; /* Cambiar el color de fondo a rosado */
+    padding: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgba(241, 145, 212, 0.24);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(224, 123, 191, 0.808); /* Hacer el fondo transparente al pasar el ratón */
+}
+
+p {
+    font-size: 22px;
+}
+
+.formatos1 {
+    color: brown;
+}
+
+header {
+    background-color: #000;
+    height: 60px;
+}
+
+
+.titulo1{
+    font-size: 70px;
+}
+.inicio {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 20vh; /* Ajusta la altura de la sección al 100% del viewport */
+}
+
+.logo-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.logo {
+    padding: 30px 100px;
+    margin-left: 300px;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.logo2 img {
+    width: 70%;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+select {
+    width: 100%;
+    padding: 3px 20px;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+model-viewer {
+    width: 500px; /* Ancho deseado */
+    height: 300px; /* Altura deseada */
+}
+
+@media(max-width: 765px) {
+    model-viewer {
+        width: 300px; /* Ancho deseado */
+        height: 200px; /* Altura deseada */
+    }
+}
+
+footer {
+    background-color: #4819ae60;
+    color: #f7f7f7c0;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+
+@media(max-width: 765px) {
+    .logo img {
+        width: 100%;
+    }
+}

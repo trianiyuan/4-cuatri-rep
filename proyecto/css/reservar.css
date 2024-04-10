@@ -1,0 +1,233 @@
+/* Barra de Navegación */
+.navbar {
+    border-radius: 20px;
+    padding-top: 0.25rem; /* Reducir el padding superior de la barra de navegación */
+    padding-bottom: 0.25rem; /* Reducir el padding inferior de la barra de navegación */
+    height: 60px; /* Reducir la altura de la barra de navegación */
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 5px; /* Ajusta este valor según sea necesario para mover el botón del menú hacia arriba */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-right: 25px;
+    font-size: 16px; /* Reducir el tamaño de la fuente para hacer el navbar más delgado */
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(10, 12, 34, 0.849);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-menu a {
+    color: #ffffffcc; /* Cambiar el color del texto a negro */
+    text-decoration: none; /* Eliminar el subrayado predeterminado */
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.fixed-icon {
+    position: fixed;
+    top: 15px; /* ajustar la posición vertical según necesites */
+    left: 00px; /* ajustar la posición horizontal según necesites */
+}
+
+.inficon {
+    position: absolute;
+    top: 11px; /* Alineación en la parte superior */
+    right: 25px; /* Alineación en la parte derecha */
+}
+
+.inficon img {
+    width: 25px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Header */
+
+.banner1 {
+    background-image: url(../imagenes/IGC3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.banner2 {
+    background-image: url(../imagenes/IGC4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.titulo1{
+    font: bold 3em Arial, sans-serif;
+}
+
+.nav-item img{
+    height: 1.5625rem;
+    margin-top: 9px;
+    margin-right: 10px
+}
+
+.titleForm{
+    font: bold 3em Arial, sans-serif;
+}
+
+.input-error {
+    border: 3px solid red;
+}
+
+.botonrecorrido{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2{
+    font-size: 18px;
+}
+
+/* Estilo para el contenedor del formulario */
+.containerForm {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para los campos de entrada */
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto dentro de los campos */
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
+
+.inputBox input:focus,
+.inputBox textarea:focus {
+    border-bottom: 2px solid #007bff; /* Cambiar el color del borde al enfocar */
+}
+
+/* Estilo para las etiquetas de los campos */
+.inputBox .text {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Estilo para la línea debajo de los campos */
+.inputBox .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #007bff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para cuando los campos están enfocados o tienen texto */
+.inputBox input:focus ~ .text,
+.inputBox input:valid ~ .text,
+.inputBox textarea:focus ~ .text,
+.inputBox textarea:valid ~ .text {
+    top: -18px; /* Mover la etiqueta hacia arriba */
+    font-size: 14px;
+    color: #007bff; /* Cambiar el color del texto */
+}
+
+/* Estilo para el botón de enviar */
+#btnSend {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnSend:hover {
+    background-color: #0056b3; /* Cambiar el color al pasar el cursor */
+}
+
+/* Estilo para el mensaje de alerta */
+#mensajeAlert {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para la alerta verde */
+.alertaVerde {
+    color: #28a745;
+}
+
+/* Estilo para la alerta roja */
+.alertaRoja {
+    color: #dc3545;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="console.css">
+    <link rel="icon" href="/proyecto/imagenes/faviconlogoinfinity.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&display=swap" rel="stylesheet">
+
+            
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-10 fixed-top top-0 start-0 w-100">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
+            <img src="imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white menuHome" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionOne" href="">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionTwo" href="../">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionThree" href="console.html">Nuestras Consolas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFour" href="#news">Paquetes</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="packageOne" href="#">Paquete Infinito #1</a></li>
+                        <li><a class="packageTwo" href="#">Paquete Infinito #2</a></li>
+                        <li><a class="packageThree" href="#">Paquete VIP Infinito</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFive" href="">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSix" href="../equipo/equipo.html">Periféricos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSeven" href="#">Sobre Nosotros</a>
+                </li>>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <header class="container-fluid1 banner1 gameboy">
+        <model-viewer src="assets/gameboy.glb" poster="" alt="Set-Up 3D" camera-controls auto-rotate></model-viewer>
+    </header>
+
+    <section class="container-fluid banner2">
+            <div class="text-center text-white banner2 pt-5">
+                <h1 class="bebas-neue-regular titulo1">NUESTRAS CONSOLAS Y VIDEOJUEGOS</h1>
+            </div>
+            <div class="pb-4"></div>
+    </section>
+
+    <section class="container-fluid banner2">
+            <div>
+    
+                <div class="row ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <section>
+                    <div class="text-white justify-content">
+                        <p>Ubicado en Oxígeno Human Playground, Infinity Gaming & Training Center es un espacio único, vanguardista e innovador que mezcla a la perfección los deportes electrónicos, la tecnología y el entretenimiento.Un lugar que busca llevar lo virtual a lo físico con la última generación de juegos, computadoras, simuladores y periféricos El “Coliseo Esports” se divide en dos áreas: la Arena, para competencias nacionales e internacionales con gradas para 100 personas y el Gaming Center, donde los aficionados a cualquier juego pueden disfrutar de todas las plataformas y vivir una experiencia superadora.</p>
+                        <p><strong>Escoge alguna de nuestras estaciones de juego:</strong></p>
+                    </div>
+                    </section>
+                    <section>
+                    <div>
+                        <select class="form-select" id="stadium">
+                        <option value="" selected disabled>Seleccione un estadio</option>
+                        <option value="1">ESTADIO AHMAD BIN ALI</option>
+                        <option value="2">ESTADIO AL BAYT STADIUM</option>
+                        <option value="3">ESTADIO AL JANOUB</option>
+                        <option value="4">ESTADIO AL THUMAMA</option>
+                        <option value="5">ESTADIO DE LA CIUDAD DE LA EDUCACIÓN</option>
+                        <option value="6">ESTADIO INTERNACIONAL KHALIFA</option>
+                        <option value="7">ESTADIO LUSAIL</option>
+                        <option value="8">ESTADIO RAS ABU ABOUD</option>
+                        </select>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-danger" id="btn-clean">Reiniciar</button>
+                    </div>
+                    </section>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+                    <div class="d-flex justify-content-center mb-2" id="output-img"></div>
+                    <div class="text-center fst-italic" id="output-txt"></div>
+                    <div class="mt-4 pb-5" id="game-options"></div>
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="container-fluid py-5 banner2">
+        <div class="container text-center">
+            <hr>
+            <div class="pt-5"></div>
+            <h2 class="text-white mb-4">¡Haz tu reserva ahora!</h2>
+            <!-- Botón de Bootstrap con clase "btn-danger" que lleva a la página de reserva -->
+            <a href="../reservar.html" class="btn btn-danger btn-lg">Reservar</a>
+            <div class="pt-5"></div>
+            <hr>
+        </div>
+    </section>
+
+    <section class="container-fluid3 banner3 pt-3">
+    </section>
+    
+    
+
+
+    <footer class="container-fluid2 banner2 pb-3">
+        <h2 class="text-center footerEng">Derechos Reservados &copy; 2024</h2>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script> 
+
+    <script src="js/combo1.js"></script>
+
+
+
+</body>
+</html>

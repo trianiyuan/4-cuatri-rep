@@ -3,121 +3,124 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
+    <title>Periféricos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/equipo.css">
+    <link rel="stylesheet" href="equipo.css">
     <link rel="icon" href="imagenes/infinitylogo.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-50 fixed-top top-0 start-0 w-100">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
-                <img src="/proyecto/imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#news">Noticias</a>
-                        <ul class="dropdown-menu text-center">
-                            <li><a href="#">Subcategoría 1</a></li>
-                            <li><a href="#">Subcategoría 2</a></li>
-                            <li><a href="#">Subcategoría 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Productos</a>
-                        <ul class="dropdown-menu text-center">
-                            <li><a href="#">Subcategoría 1</a></li>
-                            <li><a href="#">Subcategoría 2</a></li>
-                            <li><a href="#">Subcategoría 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="landing.html">Landing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Sobre Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
             
 </head>
 
-<body>
-    <header class="container-fluid1 banner1">
-        <h1 class="display-1 text-center text-white titulo1">INFINITY GAMING <span class="destacado">CENTER</span></h1>
-
-    </header>
-
-    <section class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Carga local 3D -->
-                <model-viewer src="assets/computer.glb" poster="" alt="Set-Up 3D" camera-controls auto-rotate></model-viewer>
-            </div>
-            <div class="col-md-6">
-                <p class="titulo1 pt-5">Set-Up Gamer</p>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-10 fixed-top top-0 start-0 w-100">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
+            <img src="imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionOne" href="">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionTwo" href="reservar.html">Nuestro Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionThree" href="../console/console.html">Nuestras Consolas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFour" href="#news">Paquetes</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="packageOne" href="#">Paquete Infinito #1</a></li>
+                        <li><a class="packageTwo" href="#">Paquete Infinito #2</a></li>
+                        <li><a class="packageThree" href="#">Paquete VIP Infinito</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFive" href="">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSix" href="equipo.html">Periféricos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSeven" href="#">Sobre Nosotros</a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-sm-7 col-md-7 col-lg-7">
-                <div class="text-center logo2 pt-5">
-                    <img src="imagenes/portada.jpg" alt="Vehiculo" id="imagen">
+        <header class="container-fluid">
+        </header>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Carga local 3D -->
+                    <model-viewer src="assets/computer.glb" poster="" alt="Set-Up 3D" camera-controls auto-rotate></model-viewer>
+                </div>
+                <div class="col-md-6">
+                    <p class="titulo1 pt-5"><strong>Set-Up Gamer</strong></p>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-5 col-lg-5">
-                <div class="inputs pt-4">
-                    <h2 class="pb-3">Seleccione el Periférico</h2>
-                    <h4>Periféricos</h4>
-                    <select name="periferico" id="periferico">
-                        <option selected disabled>Seleccione un periférico:</option>
-                        <option>Teclado</option>
-                        <option>Mouse</option>
-                        <option>Audífonos</option>
-                        <option>Micrófono</option>
-                    </select>
-                    <div class="pt-3"></div>
-                    <h4>Versión</h4>
-                    <select name="version" id="version">
-                        <option selected disabled>Seleccione la marca:</option>
-                        <option>Razer</option>
-                        <option>Logitech</option>
-                    </select>
-                    <div class="pt-4">
-                        <button class="btn btn-light btn-lg mt-3" onclick="calcular()">Calcular Precio</button>
+        </section>
+        
+    
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-sm-7 col-md-7 col-lg-7">
+                    <div class="text-center logo2 pt-5">
+                        <img src="imagenes/portada.jpg" alt="Vehiculo" id="imagen">
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <div class="inputs pt-4">
+                        <h2 class="pb-3">Seleccione el Periférico</h2>
+                        <h4>Periféricos</h4>
+                        <select name="periferico" id="periferico">
+                            <option selected disabled>Seleccione un periférico:</option>
+                            <option>Teclado</option>
+                            <option>Mouse</option>
+                            <option>Audífonos</option>
+                            <option>Micrófono</option>
+                        </select>
+                        <div class="pt-3"></div>
+                        <h4>Versión</h4>
+                        <select name="version" id="version">
+                            <option selected disabled>Seleccione la marca:</option>
+                            <option>Razer</option>
+                            <option>Logitech</option>
+                        </select>
+                        <div class="pt-4">
+                            <button class="btn btn-danger btn-lg mt-3" onclick="calcular()">Calcular Precio</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
-    <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        <div class="pt-5"></div>
+        
     
-
-    <footer class="container-fluid2 fondo1">
-        <h2 class="text-center">Derechos Reservados &copy; 2024</h2>
+    <footer class="shadow-box">
+        <p><strong>Derechos Reservados &copy; 2024</strong></p>
     </footer>
 
     <script>
@@ -131,7 +134,9 @@
         });
     </script>
 
-    <script src="js/equipo.js"></script>
+    <script src="js/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
@@ -144,11 +149,5 @@
     <!-- libreria Lottie JS-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script> 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-</body>
+    </body>
 </html>
