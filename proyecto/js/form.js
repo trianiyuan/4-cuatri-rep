@@ -52,3 +52,54 @@ let name_input = document.getElementById("name");
             });
         }
 
+
+        'use strict';
+
+window.addEventListener('load', init, false);
+
+function init() {
+    let btnEnviar = document.getElementById('btnSend');
+    let alerta = document.getElementById('mensajeAlert');
+
+    btnEnviar.addEventListener('click', function() {
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alerta.textContent = 'Debe llenar todos los campos';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
+        } else {
+            // Si no hay errores, envía el formulario por correo electrónico
+            alerta.textContent = 'Reserva confirmada';
+            alerta.classList.add('alertaVerde');
+            alerta.classList.remove('alertaRoja');
+            // Envía los datos del formulario a través de emailjs
+            emailjs.sendForm('service_fk6kt3d', 'template_t4vh2tj', '#form', 'LOdSsM6IiEFZYpMlA')
+            .then(function(response) {
+                console.log('Éxito!', response.status, response.text);
+                limpiar(); // Limpia los campos del formulario después de enviarlo
+                // Muestra la confirmación usando SweetAlert2
+                Swal.fire({
+                    title: 'Reserva Confirmada',
+                    text: '¡Su reserva ha sido enviada correctamente!',
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                }).then(() => {
+                    // Redirige a la página "landing.html"
+                    window.location.href = "inicio.html";
+                });
+            }, function(error) {
+                console.log('Error!', error);
+            });
+        }
+    });
+
+    // Limpia los campos del formulario
+    function limpiar() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    }
+}

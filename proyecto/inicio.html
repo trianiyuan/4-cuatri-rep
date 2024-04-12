@@ -7,8 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/inicio.css">
     <link rel="stylesheet" href="css/reglas.css">
-    <link rel="icon" href="/proyecto/imagenes/faviconlogoinfinity.png">
-
+    <link rel="icon" href="imagenes/faviconlogoinfinity.png">
     <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
 
             
@@ -29,10 +28,10 @@
                     <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white menuSectionOne" href="">Eventos</a>
+                    <a class="nav-link text-white menuSectionOne" href="eventos.html">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white menuSectionTwo" href="reservar.html">Nuestro Equipo</a>
+                    <a class="nav-link text-white menuSectionTwo" href="nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white menuSectionThree" href="console/console.html">Nuestras Consolas</a>
@@ -120,21 +119,16 @@
         </div>
     </section>
 
-    <section class="sucriptionForm container-fluid">
-        <form action="" method="post" id="form1">
-            <div class="text-center">
-                <label class="container text-center text-white suscribeText">¡Recibe las novedades de nuestros torneos y eventos próximos en el IGC!</label>
-            </div>
-
-            <div class="text-center pt-4 pb-5
-            ">
-                <div class="input-container">
-                    <input type="email" class="insideEmail" placeholder="Ingresa tu correo electrónico" required>
-                    <button class="btn btn-danger btn-sm suscribeBtn">Suscribirse</button>
-                </div>
-            </div>
-            
-        </form>
+    <section class="container-fluid sucriptionForm seccionInscripcion py-5">
+        <div class="container text-center">
+            <h2 class="pb-5 text-white suscribeText">¡Recibe las novedades de nuestros torneos y eventos próximos en el IGC!</h2>
+            <form id="inscription">
+                <!-- el name es el que se pone en el temaplate de emial.js-->
+                <input class="email insideEmail" name="email" id="inscriptionTxt" type="email" placeholder="Ingresa tu correo electrónico">
+                <input id="btnSend" class="btn btn-danger btn-sm suscribeBtn" type="button" value="Suscribirse">
+                <p id="mensajeAlert"></p>
+            </form>
+        </div>
     </section>
 
     <section class="container-fluid4 banner2">
@@ -208,7 +202,8 @@
                     <textarea class="form-control" id="message" rows="5" required></textarea>
                     <div class="invalid-feedback">Por favor, introduce tu mensaje.</div>
                 </div>
-                <button type="button" onclick="sent()" class="btn btn-outline-danger mt-4 sendForm">Enviar</button>
+                <p id="mensajeAlert"></p>
+                <button id="btnSend" type="button" onclick="sent()" class="btn btn-outline-danger mt-4 sendForm">Enviar</button>
             </form>
         </div>
     </section>
@@ -218,7 +213,7 @@
         <h2 class="text-center footerEng">Derechos Reservados &copy; 2024</h2>
     </footer>
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -237,6 +232,7 @@
     <script src="js/form.js"></script>
 
 <script src="js/idioma.js"></script>
+<script src="js/subscribeForm.js"></script>
 
 </body>
 </html>

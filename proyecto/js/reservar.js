@@ -52,4 +52,14 @@ function init() {
     }
 }
 
+let hoy = new Date();
+        let dd = String(hoy.getDate()).padStart(2, '0');
+        let mm = String(hoy.getMonth() + 1).padStart(2, '0'); // Enero es 0
+        let yyyy = hoy.getFullYear();
+        let fechaHoy = yyyy + '-' + mm + '-' + dd;
 
+        // Configurar el atributo 'min' de los campos de fecha para que no puedan seleccionar una fecha anterior a hoy
+        let camposFecha = document.querySelectorAll('input[type="date"]');
+        camposFecha.forEach(function(input) {
+            input.setAttribute('min', fechaHoy);
+        });

@@ -195,6 +195,19 @@ hr {
     font: bold 3em Arial, sans-serif;
 }
 
+.alertaRoja{
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 22px;
+}
+.alertaVerde{
+    color: #91ff00;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 22px;
+}
+
 .input-error {
     border: 3px solid red;
 }

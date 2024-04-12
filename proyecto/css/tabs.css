@@ -1,0 +1,80 @@
+/* propiedades de la caja del tabulador */
+.tab {
+    overflow: hidden;
+    border: 1.5px solid #131322;
+    background-color: #e40000;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrar el texto dentro del contenedor */
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.tam1 {
+    font-size: 24px;
+}
+
+
+/* controla propiedades de los TABS */
+.tab button {
+    background-color: #131322;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    display: inline-block; /* Alinear los botones en línea */
+}
+
+
+/* controla el color sobre los TABS */
+.tab button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* controla el color activo de los TABS */
+.tab button.active {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+/* controla el contenido de cada pestaña tab */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #ffffff;
+    border-top: none;
+    background: #131322;
+    color: #ffff;
+    align-items: center;
+}
+
+.tabcontent img {
+    display: block; /* Para permitir el uso de márgenes automáticos */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Agregar espacio entre la imagen y otros elementos */
+}
+
+
+
+/* El efecto de animación desvanecimiento tarda 2 segundos al entrar a cada pestaña */
+
+.tabcontent {
+    animation: efect1 2s;
+}
+
+@keyframes efect1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
