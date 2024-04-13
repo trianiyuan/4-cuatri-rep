@@ -43,10 +43,10 @@ body {
     top: calc(100% + 5px);
     left: 0;
     z-index: 1000;
-    background-color: rgba(10, 12, 34, 0.616);
+    background-color: rgba(10, 12, 34, 0.849);
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.774);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 
 .nav-item:hover .dropdown-menu {
@@ -112,7 +112,7 @@ h3{
     margin-bottom: 60px;
 }
 .colorLabel{
-    color: rgb(0, 207, 111);
+    color: rgb(255, 255, 255);
 }
 .checkbox{
     margin-left: 10px;
@@ -134,9 +134,8 @@ h3{
 .boton{
     padding: 10px 30px;
     border: none;
-    background-color: rgb(137, 252, 217);
-    color: white;
     border-radius: 3px;
+    background-color: #ff0000;
 }
 .Resultados{
     margin-top: 50px;
@@ -147,16 +146,18 @@ p{
 }
 
 
+
+
 footer {
-    background-color: #e2c6c6c0;
-    color: #f7f7f7c0;
+    background-color: none;
+    color: #f7f7f77e;
     text-align: center;
     padding-top: 14px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-footer p{
+footer h2{
     font-size: 18px;
 }

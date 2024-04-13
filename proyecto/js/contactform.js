@@ -62,6 +62,8 @@ function evaluarEncuesta() {
             html: "<iframe src='https://lottie.host/embed/b152c3a4-0809-4781-bb94-c3b4ab288ed2/aVAczlrWYj.json' width='440' height='380' ></iframe>"
         });
 
+        limpiarFormulario();
+
         // Resultado de la encuesta
         document.getElementById("res0").innerHTML = "¡Gracias por tus respuestas!";
         document.getElementById("res1").innerHTML = mensaje2;
@@ -83,6 +85,8 @@ function limpiarFormulario() {
     document.getElementById("pc").checked = false;
     document.getElementById("nintendo").checked = false;
     document.getElementById("ps4").checked = false;
+
+    document.querySelectorAll('.checkbox').forEach(checkbox => checkbox.checked = false);
 
     document.getElementById("res0").innerHTML = "";
     document.getElementById("res1").innerHTML = "";

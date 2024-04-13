@@ -106,14 +106,17 @@
 
 .container-fluid0{
     height: 350px;
+
 }
 
 .banner2 {
     background-image: url(../imagenes/gamingparty2.jpg);
+    
 }
 
 .container-fluid2{
-    height: 350px;
+    height: 300px;
+    margin-top: -20px;
 }
 
 

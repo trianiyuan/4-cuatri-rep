@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../proyecto/css/inicio.css">
     <link rel="stylesheet" href="css/contactform.css">
-    <link rel="icon" href="/proyecto/imagenes/faviconlogoinfinity.png">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="icon" href="imagenes/faviconlogoinfinity.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
 
@@ -29,10 +29,10 @@
                     <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white menuSectionOne" href="">Eventos</a>
+                    <a class="nav-link text-white menuSectionOne" href="eventos.html">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white menuSectionTwo" href="">Tú Experiencia</a>
+                    <a class="nav-link text-white menuSectionTwo" href="nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white menuSectionThree" href="console/console.html">Nuestras Consolas</a>
@@ -49,32 +49,16 @@
                     <a class="nav-link text-white menuSectionFive" href="">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white menuSectionSix" href="">Equipo</a>
+                    <a class="nav-link text-white menuSectionSix" href="equipo/equipo.html">Equipo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white menuSectionSeven" href="#">Sobre Nosotros</a>
                 </li>
-                <div class="langWrap d-flex">
-
-                    <li class="nav-item">
-                        <a href="#" language="espanish" class="active"><img class="img-fluid mr-3" src="imagenes/es.webp" alt="Español"></a>
-                    </li>
-                    <li class="nav-item ml-3">
-                        <a href="#" language="english"> <img class="img-fluid" src="imagenes/eu.webp" alt="Ingles"></a>
-                    </li>
-                </div>
             </ul>
         </div>
     </div>
 </nav>
         <header class="banner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 text-center pt-5 info">
-                        <h3>INF GAMING CENTER</h3>
-                    </div>
-                </div>
-            </div>
         </header>
     
         <section class="container">
@@ -143,8 +127,8 @@
         
                     <!-- Botón ENVIAR -->
                     <div class="botonEnviar">
-                        <input type="button" value="Enviar" class="boton" onclick="evaluarEncuesta()">
-                        <input type="button" value="Limpiar" class="boton" onclick="limpiarFormulario()">
+                        <input type="button" value="Enviar" class="boton btn btn-outline-light" onclick="evaluarEncuesta()">
+                        <input type="button" value="Limpiar" class="boton btn btn-outline-light" onclick="limpiarFormulario()">
                     </div>
                 </form>
         
@@ -158,10 +142,6 @@
             </div>
         </section>
 
-    <div class="pt-3
-    "></div>
-
-    
         <footer>
             <p><strong>Derechos Reservados &copy; 2024</strong></p>
         </footer>
@@ -184,6 +164,62 @@
         <!--Libreria de la nueva alerta-->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    
+    <!-- CONFIGURACION TESTIMONIAL JS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            //ciclo
+            loop: true,
+
+            //margen entre las fotos de personas
+            margin: 12,
+
+            //navegacion con flechas con valor true
+            nav: true,
+
+            //agrega radios de navegacion con valor true
+            dots: false,
+
+            //se autoejecutan al iniciar con valor true
+            autoplay: true,
+
+            //parte responsive de los dispositivos
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+
+
+
+    <!-- CARGAS JS LIBRERIAS CONTADOR NUMERICO -->
+    <!-- velocidad del contador (main.js) linea 155aprox -->
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/jquery.animateNumber.min.js "></script>
+    <script src="js/bootstrap-datepicker.js "></script>
+    <script src="js/jquery.timepicker.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/scrollax.min.js "></script>
+
+    <!--Js principal que se puede editar -->
+    <script src="js/main.js "></script>
 
     </body>
 </html>
