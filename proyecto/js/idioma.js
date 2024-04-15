@@ -53,7 +53,6 @@ link.forEach(r => {
         menuSectionFour.textContent = changeLanguage[attr].menuSectionFour;
         menuSectionFive.textContent = changeLanguage[attr].menuSectionFive;
         menuSectionSix.textContent = changeLanguage[attr].menuSectionSix;
-        menuSectionSeven.textContent = changeLanguage[attr].menuSectionSeven;
         packageOne.textContent = changeLanguage[attr].packageOne;
         packageTwo.textContent = changeLanguage[attr].packageTwo;
         ourServices.textContent = changeLanguage[attr].ourServices;
@@ -92,12 +91,11 @@ let changeLanguage = {
         "tp2": "Un espacio donde llevamos lo virtual a lo fisíco con tecnología de vanguardia desde las computadoras hasta el sonido y video. Queremos que cualquier equipo amateur o profesional de Costa Rica o Latinoamérica puedan usar las instalaciones para entrenar, realizar bootcamps, presentaciones, etc",
         "menuHome": "Inicio",
         "menuSectionOne": "Eventos",
-        "menuSectionTwo": "Consultas",
-        "menuSectionThree": "Recorrido 360",
+        "menuSectionTwo": "Sobre Nosotros",
+        "menuSectionThree": "Nuestras Consolas",
         "menuSectionFour": "Paquetes",
         "menuSectionFive": "Noticias",
-        "menuSectionSix": "Equipo",
-        "menuSectionSeven": "Sobre Nosotros",
+        "menuSectionSix": "Periféricos",
         "packageOne": "Paquetes Infinito",
         "packageTwo": "Paquetes Ejecutivos",
         "ourServices": "Nuestros Servicios",
@@ -132,12 +130,11 @@ let changeLanguage = {
         "tp2": "A space where we bring the virtual to the physical with cutting-edge technology from computers to sound and video. We want any amateur or professional team from Costa Rica or Latin America to be able to use the facilities to train, hold bootcamps, presentations, etc.",
         "menuHome": "Home",
         "menuSectionOne": "Events",
-        "menuSectionTwo": "Inquiries",
-        "menuSectionThree": "Tour 360",
+        "menuSectionTwo": "About Us",
+        "menuSectionThree": "Our Consoles",
         "menuSectionFour": "Packages",
         "menuSectionFive": "News",
-        "menuSectionSix": "Equipment",
-        "menuSectionSeven": "About Us",
+        "menuSectionSix": "Peripherals",
         "packageOne": "Infinite Packages",
         "packageTwo": "Executive Packages",
         "ourServices": "Our Services",
