@@ -6,10 +6,10 @@
 /* botón ver video*/
 
 #boton {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #0004d4fb;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fffffffb;
     border-radius: 35px;
-    color: #0004d4;
+    color: #ffffff;
     padding: 7px 15px;
     display: inline-block;
     font-size: 20px;
@@ -17,7 +17,7 @@
 }
 
 #boton:hover {
-    background-color: #0004d4fb; /* Cambio de color de fondo en hover */
+    background-color: #ff0000fb; /* Cambio de color de fondo en hover */
     color: #fff; /* Cambio de color de texto en hover */
 }
 

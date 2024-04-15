@@ -17,7 +17,6 @@ const menuSectionSix = document.querySelector('.menuSectionSix');
 const menuSectionSeven = document.querySelector('.menuSectionSeven');
 const packageOne = document.querySelector('.packageOne');
 const packageTwo = document.querySelector('.packageTwo');
-const packageThree = document.querySelector('.packageThree');
 const ourServices = document.querySelector('.ourServices');
 const consoles = document.querySelector('.consoles');
 const descriptionConsoles = document.querySelector('.descriptionConsoles');
@@ -57,7 +56,6 @@ link.forEach(r => {
         menuSectionSeven.textContent = changeLanguage[attr].menuSectionSeven;
         packageOne.textContent = changeLanguage[attr].packageOne;
         packageTwo.textContent = changeLanguage[attr].packageTwo;
-        packageThree.textContent = changeLanguage[attr].packageThree;
         ourServices.textContent = changeLanguage[attr].ourServices;
         consoles.textContent = changeLanguage[attr].consoles;
         descriptionConsoles.textContent = changeLanguage[attr].descriptionConsoles;
@@ -100,9 +98,8 @@ let changeLanguage = {
         "menuSectionFive": "Noticias",
         "menuSectionSix": "Equipo",
         "menuSectionSeven": "Sobre Nosotros",
-        "packageOne": "Paquete Infinito #1",
-        "packageTwo": "Paquete Infinito #2",
-        "packageThree": "Paquete VIP Infinito",
+        "packageOne": "Paquetes Infinito",
+        "packageTwo": "Paquetes Ejecutivos",
         "ourServices": "Nuestros Servicios",
         "consoles": "Consolas",
         "descriptionConsoles": "Nuestras consolas más populares son PlayStation de Sony, Xbox de Microsoft y Nintendo Switch. Ofrecen una experiencia de juego simplificada y optimizada, con hardware y software específicamente diseñados para juegos.",
@@ -141,9 +138,8 @@ let changeLanguage = {
         "menuSectionFive": "News",
         "menuSectionSix": "Equipment",
         "menuSectionSeven": "About Us",
-        "packageOne": "Infinite Package #1",
-        "packageTwo": "Infinite Package #2",
-        "packageThree": "Infinite VIP Package",
+        "packageOne": "Infinite Packages",
+        "packageTwo": "Executive Packages",
         "ourServices": "Our Services",
         "consoles": "Consoles",
         "descriptionConsoles": "Our most popular consoles are Sony PlayStation, Microsoft Xbox and Nintendo Switch. They offer a simplified and optimized gaming experience, with hardware and software specifically designed for gaming",

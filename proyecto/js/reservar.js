@@ -13,7 +13,7 @@ function init() {
         let fecha = document.getElementById('fechaTxt').value;
 
         if (consola === '' || juego === '' || tiempo === '' || fecha === '') {
-            alerta.textContent = 'Debe llenar todos los campos';
+            alerta.textContent = 'Debe llenar todos los campos.';
             alerta.classList.add('alertaRoja');
             alerta.classList.remove('alertaVerde');
         } else {
@@ -38,6 +38,12 @@ function init() {
                 });
             }, function(error) {
                 console.log('Error!', error);
+                swal.fire({
+                    title: "Error al enviar el formulario",
+                    text: "Hubo un problema al enviar el formulario. Por favor, inténtelo de nuevo más tarde.",
+                    icon: "error",
+                    confirmButtonText: "Cerrar"
+                });
             });
         }
     });
