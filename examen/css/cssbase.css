@@ -1,0 +1,146 @@
+/* Barra de Navegación */
+.navbar {
+    border-radius: 20px;
+    padding-top: 0.25rem; /* Reducir el padding superior de la barra de navegación */
+    padding-bottom: 0.25rem; /* Reducir el padding inferior de la barra de navegación */
+    height: 60px; /* Reducir la altura de la barra de navegación */
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 5px; /* Ajusta este valor según sea necesario para mover el botón del menú hacia arriba */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-right: 25px;
+    font-size: 16px; /* Reducir el tamaño de la fuente para hacer el navbar más delgado */
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(10, 12, 34, 0.849);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-menu a {
+    color: #ffffffcc; /* Cambiar el color del texto a negro */
+    text-decoration: none; /* Eliminar el subrayado predeterminado */
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.fixed-icon {
+    position: fixed;
+    top: 15px; /* ajustar la posición vertical según necesites */
+    left: 00px; /* ajustar la posición horizontal según necesites */
+}
+
+.inficon {
+    position: absolute;
+    top: 11px; /* Alineación en la parte superior */
+    right: 25px; /* Alineación en la parte derecha */
+}
+
+.inficon img {
+    width: 25px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Header */
+
+.banner1 {
+    background-image: url(../imagenes/camisas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.banner2 {
+    background-image: url(../imagenes/IGC4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.titulo1{
+    font: bold 3em Arial, sans-serif;
+}
+
+.nav-item img{
+    height: 1.5625rem;
+    margin-top: 9px;
+    margin-right: 10px
+}
+
+.titulo3{
+    font: bold 3em Arial, sans-serif;
+}
+
+.destacado {
+    background-color: red;
+    color: black;
+    padding: 0 5px; /* Añade un poco de espacio alrededor del texto */
+}
+
+
+.container-fluid1 {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+
+.fondo1 {
+    background-color: #131322;
+}
+
+
+
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2{
+    font-size: 18px;
+}
+
+
