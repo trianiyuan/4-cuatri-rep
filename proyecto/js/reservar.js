@@ -33,7 +33,7 @@ function init() {
                     icon: 'success',
                     confirmButtonText: 'Aceptar'
                 }).then(() => {
-                    // Redirige a la página "landing.html"
+                    // Redirige a la página "inicio.html"
                     window.location.href = "inicio.html";
                 });
             }, function(error) {
@@ -59,13 +59,67 @@ function init() {
 }
 
 let hoy = new Date();
-        let dd = String(hoy.getDate()).padStart(2, '0');
-        let mm = String(hoy.getMonth() + 1).padStart(2, '0'); // Enero es 0
-        let yyyy = hoy.getFullYear();
-        let fechaHoy = yyyy + '-' + mm + '-' + dd;
+let dd = String(hoy.getDate()).padStart(2, '0');
+let mm = String(hoy.getMonth() + 1).padStart(2, '0'); // Enero es 0
+let yyyy = hoy.getFullYear();
+let fechaHoy = yyyy + '-' + mm + '-' + dd;
 
-        // Configurar el atributo 'min' de los campos de fecha para que no puedan seleccionar una fecha anterior a hoy
-        let camposFecha = document.querySelectorAll('input[type="date"]');
-        camposFecha.forEach(function(input) {
-            input.setAttribute('min', fechaHoy);
-        });
+// Configurar el atributo 'min' de los campos de fecha para que no puedan seleccionar una fecha anterior a hoy
+let camposFecha = document.querySelectorAll('input[type="date"]');
+camposFecha.forEach(function(input) {
+    input.setAttribute('min', fechaHoy);
+});
+
+function updateGames() {
+    var consoleSelect = document.getElementById("consolaTxt");
+    var gameSelect = document.getElementById("juegoTxt");
+    var selectedConsole = consoleSelect.value;
+    
+    // Limpiar las opciones anteriores
+    gameSelect.innerHTML = "";
+    
+    // Agregar nuevas opciones según la consola seleccionada
+    switch (selectedConsole) {
+        case "Nintendo Switch":
+            addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
+            addOption(gameSelect, "The Legend of Zelda", "The Legend of Zelda");
+            addOption(gameSelect, "Mario Kart", "Mario Kart");
+            addOption(gameSelect, "Super Smash Bros", "Super Smash Bros");
+            addOption(gameSelect, "Just Dance", "Just Dance");
+            break;
+        case "PS5":
+            addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
+            addOption(gameSelect, "Spider-Man: Miles Morales", "Spider-Man: Miles Morales");
+            addOption(gameSelect, "Demon's Souls", "Demon's Souls");
+            addOption(gameSelect, "Call of Duty: Black Ops Cold War", "Call of Duty: Black Ops Cold War");
+            break;
+        case "XBOX":
+            addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
+            addOption(gameSelect, "Halo Infinite", "Halo Infinite");
+            addOption(gameSelect, "Call of Duty: Vanguard", "Call of Duty: Vanguard");
+            addOption(gameSelect, "FIFA 22", "FIFA 22");
+            break;
+        case "PC":
+            addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
+            addOption(gameSelect, "Valorant", "Valorant");
+            addOption(gameSelect, "League Of Legends", "League Of Legends");
+            addOption(gameSelect, "Genshin Impact", "Genshin Impact");
+            break;
+        case "Sim Racing":
+            addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
+            addOption(gameSelect, "iRacing", "iRacing");
+            addOption(gameSelect, "Assetto Corsa", "Assetto Corsa");
+            addOption(gameSelect, "Gran Turismo Sport", "Gran Turismo Sport");
+            break;
+        default:
+            addOption(gameSelect, "Seleccionar un juego", "");
+            break;
+    }
+}
+
+function addOption(selectElement, text, value) {
+    var option = document.createElement("option");
+    option.text = text;
+    option.value = value;
+    selectElement.add(option);
+}
