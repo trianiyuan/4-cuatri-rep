@@ -1,6 +1,6 @@
 body {
     /*font-family: 'Fira Sans', sans-serif;*/
-    background-image: url('/proyecto/imagenes/arena.jpg'); 
+    background-image: url('../imagenes/arena.jpg'); 
     background-size: cover;
     background-position: center;
     color: #fff;
