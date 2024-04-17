@@ -122,6 +122,25 @@
     padding: 0 5px; /* Añade un poco de espacio alrededor del texto */
 }
 
+p{
+    font-size: 20px;
+}
+
+/*estilos referentes al titulo Foto #*/
+a {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.patrocinadores{
+    width: 200px;
+    height: auto;
+}
+
+
 
 
 .container-fluid1 {

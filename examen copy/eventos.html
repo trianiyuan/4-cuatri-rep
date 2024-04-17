@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link rel="icon" href="imagenes/faviconlogoinfinity.png"> 
+    <link href="css/eventos.css" rel="stylesheet">
+    <!-- cargar hoja de estilo del lightbox fotografico -->
+    <link href="css/lightbox1.css" rel="stylesheet">
+    <!-- cargar hoja de estilo del lightbox video -->
+    <link href="css/lightbox2.css" rel="stylesheet">
+    <!-- cargar hoja de estilo de las pestañas -->
+    <link href="css/tabs.css" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-10 fixed-top top-0 start-0 w-100">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
+            <img src="imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionOne" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionTwo" href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionThree" href="console/console.html">Nuestras Consolas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFour" href="paquetes.html">Paquetes</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="packageOne" href="paquetes.html">Paquetes Infinito</a></li>
+                        <li><a class="packageTwo" href="paquetes.html">Paquetes Ejecutivos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFive" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSix" href="equipo/equipo.html">Periféricos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <header class="container-fluid0 banner1 text-center">
+        <img class="gplogo" src="imagenes/gplogo.png" alt="Logo Gaming Party">
+    </header>
+
+    <section class="container-fluid6 dark-bg">
+        <div class="container">
+            <p class="pt-3 text-white tp pb-4">
+                ¡Sumérgete en el universo del entretenimiento digital con Gaming Party! Este evento, celebrado los días 2 y 3 de marzo de 2024, fue mucho más que una simple reunión de gamers y geeks: fue una explosión de diversión y creatividad que atrajo a más de 10.000 entusiastas. Con acceso gratuito para todos, Gaming Party ofreció una experiencia inolvidable, repleta de emocionantes actividades y atracciones.
+            </p>
+    </section>
+
+    <section class="container-fluid2 banner2">
+    </section>
+
+    <section class="container-fluid dark-bg">
+        <div class="row">
+
+            <div class="col-md-6 d-flex justify-content-center align-items-center  pb-4">
+                <!-- lightbox de foto-->
+                <div class="pt-5">
+                    <!-- activar el modal -->
+                    <!--myImg representa la imagen-->
+                    <img id="myImg" src="imagenes/logo.png" alt="Gaming Party" style="max-width:300px">
+                    <!-- ID modal -->
+                    <div id="modal1" class="modal">
+                        <!-- botón de cierre del modal -->
+                        <div class="close">&times;</div>
+                        <!-- contenido del modal -->
+                        <img class="modal-content" id="img01">
+                        <!-- título del modal -->
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <p class="container pt-5 text-white tp">
+                    Desde zonas free to play hasta concursos con premios increíbles, pasando por emocionantes combates de realidad virtual y batallas de paintball, Gaming Party tuvo de todo para satisfacer los deseos de los más ávidos aficionados. ¡Incluso contamos con un auténtico ring y un espectáculo de lucha libre que dejó a todos boquiabiertos!
+                </p>
+                <div class="pt-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid3 banner3">
+    </section>
+
+    <section class="container-fluid8 dark-bg">
+        <p class="pt-5 container text-white tp">
+            Pero eso no fue todo. La energía vibrante del evento se extendió hasta el escenario, donde bandas locales y talentosos músicos demostraron su destreza y encendieron el ambiente con su música. Además, los cosplayers tomaron el centro de atención, deslumbrando a todos con sus increíbles trajes y representaciones de personajes favoritos de los videojuegos, películas y cómics.
+        </p>
+
+        <h3 class="container pb-4 tp text-white"><i>Gaming Party no solo fue un evento, fue una experiencia épica que reunió a la comunidad de gamers y geeks en un ambiente de celebración, diversión y camaradería. ¡Y estamos ansiosos por verte en la próxima edición!</i></h3>
+    </section>
+
+    <section class="container-fluid4 align-items-center dark-bg">
+        <!-- boton para activar el lightbox de vídeo -->
+                <!-- permite cargar la funcion ejecutar JS -->
+                <button id="boton" onclick="ejecutar('video','youtube')" class="cursor boton-gaming">Ver Resumen del Gaming Party</button>
+                <!-- permite cargar la funcion ocultar JS -->
+                <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+                    <!-- permite poner el tamaño del contenedor del lightbox -->
+                    <div class="lightbox-container">
+                        <!-- permite poner transparente la pantalla -->
+                        <div class="lightbox-content">
+                            <button onclick="ocultar('video','youtube')" class="lightbox-close cursor">
+                        Cerrar | ✕
+                    </button>
+                            <!-- permite poner el vídeo responsivo -->
+                            <div class="video-container">
+                                <!-- agregar la terminacion ?showinfo=0 para ocultar los vídeos promocionales al final  -->
+                                <!-- si se activa no funciona los controles del video youtube accelerometer;   -->
+                                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/VI6GAiBNe7o?si=AzjAQskyXgGkvd7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+    <footer class="container-fluid pb-3 dark-bg">
+        <h2 class="text-center footerEng">Derechos Reservados &copy; 2024</h2>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+
+    <!-- cargar la programación del lightbox fotografico -->
+    <script src="js/lightbox1.js "></script>
+    <!-- cargar la programación del lightbox de vídeo -->
+    <script src="js/lightbox2.js "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="icon" href="imagenes/faviconlogoinfinity.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+
+            
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-10 fixed-top top-0 start-0 w-100">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 5px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand text-light d-flex justify-content-center align-items-center" href="inicio.html" style="height: 100px;"> <!-- Ajusta la altura según sea necesario -->
+            <img src="imagenes/infinitylogo.png" alt="Icono" class="inficon" style="width: 30px; height: auto; margin-right: 20px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white menuHome" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionOne" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionTwo" href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionThree" href="console/console.html">Nuestras Consolas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFour" href="paquetes.html">Paquetes</a>
+                    <ul class="dropdown-menu text-center">
+                        <li><a class="packageOne" href="paquetes.html">Paquetes Infinito</a></li>
+                        <li><a class="packageTwo" href="paquetes.html">Paquetes Ejecutivos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionFive" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white menuSectionSix" href="equipo/equipo.html">Equipo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <header class="banner">
+        </header>
+    
+        <section class="container">
+            <div class="instrucciones text-center pt-5">
+                <h1>¡Cuéntanos de tu experiencia!</h1>
+                <p class="pt-3">Realizamos esta encuesta para conocer más de sus experiencias y como pasaron el rato en nuestras instalaciones.</p>
+            </div>
+        
+            <div class="encuesta container-fluid">
+                <!-- Inicio del formulario -->
+                <form action="" id="formulario" name="formulario">
+                    <!-- Pregunta 1 -->
+                    <div class="mb-3">
+                        <label for="pregunta1" class="colorLabel">1. ¿Qué tipo de juegos prefieres jugar en nuestro centro?</label><br>
+                        <input type="text" id="pregunta1" name="pregunta1" class="form-control mt-2" required>
+                    </div>
+        
+                    <!-- Pregunta 2 -->
+                    <div class="mb-3">
+                        <label for="pregunta2" class="colorLabel">2. ¿Cuántas veces visitas nuestro centro de videojuegos por semana?</label><br>
+                        <input type="number" id="pregunta2" name="pregunta2" class="form-control mt-2" required>
+                    </div>
+        
+                    <!-- Pregunta 3 -->
+                    <div class="mb-3">
+                        <label for="pregunta3" class="colorLabel">3. ¿Qué mejorarías de nuestro centro de videojuegos?</label><br>
+                        <textarea id="pregunta3" class="form-control mt-2" name="pregunta3" rows="4" required></textarea>
+                    </div>
+        
+                    <!-- Pregunta 4 -->
+                    <div class="mb-3">
+                        <label class="colorLabel">4. ¿Recomendarías nuestro centro de videojuegos a tus amigos?</label><br>
+                        <input type="radio" id="radio1" name="pregunta4" value="Sí" required> Sí
+                        <br>
+                        <input type="radio" id="radio2" name="pregunta4" value="No"> No
+                    </div>
+        
+                    <!-- Pregunta 5 -->
+                    <div class="mb-3">
+                        <label class="colorLabel">5. ¿Cómo calificarías la calidad de los equipos y la infraestructura?</label><br>
+                        <input type="radio" id="radio3" name="pregunta5" value="Excelente" required> Excelente
+                        <br>
+                        <input type="radio" id="radio4" name="pregunta5" value="Bueno"> Bueno
+                        <br>
+                        <input type="radio" id="radio5" name="pregunta5" value="Regular"> Regular
+                        <br>
+                        <input type="radio" id="radio6" name="pregunta5" value="Malo"> Malo
+                    </div>
+        
+                    <!-- Pregunta 6 -->
+                    <div class="checks mb-3">
+                        <label class="colorLabel">6. Marca los servicios que más utilizas en nuestro centro: <br>Selecciona una o más opciones.</label><br>
+                        <input type="checkbox" id="pc" name="servicios[]" class="checkbox"> PC
+                        <input type="checkbox" id="nintendo" name="servicios[]" class="checkbox"> Nintendo Switch
+                        <input type="checkbox" id="ps4" name="servicios[]" class="checkbox"> PS4
+                    </div>
+        
+                    <!-- Pregunta 7 -->
+                    <div class="checks mb-3">
+                        <label class="colorLabel">7. ¿Cómo te enteraste de nuestro centro de videojuegos?<br>Selecciona una o más opciones.</label><br>
+                        <input type="checkbox" name="medios[]" id="redes_sociales" class="checkbox"> Redes Sociales
+                        <input type="checkbox" name="medios[]" id="amigos" class="checkbox"> Recomendación de amigos
+                        <input type="checkbox" name="medios[]" id="internet" class="checkbox"> Servidores de Búsqueda
+                        <input type="checkbox" name="medios[]" id="otros" class="checkbox"> Otros
+                    </div>
+        
+                    <!-- Botón ENVIAR -->
+                    <div class="botonEnviar">
+                        <input type="button" value="Enviar" class="boton btn btn-outline-light" onclick="evaluarEncuesta()">
+                        <input type="button" value="Limpiar" class="boton btn btn-outline-light" onclick="limpiarFormulario()">
+                    </div>
+                </form>
+        
+                <!-- Resultados al cliente en la página web -->
+                <div class="Resultados mt-5">
+                    <h2 class="pt-3 pb-3" id="res0"></h2>
+                    <p id="res1"></p>
+                    <p id="res2"></p>
+                    <p id="res3"></p>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer>
+            <p><strong>Derechos Reservados &copy; 2024</strong></p>
+        </footer>
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("YOUR_USER_ID");
+    })();
+</script>
+
+    
+    
+        <!--Carga de la interactividad del framework-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <!-- cargar la programacion JS-->
+        <script src="js/contactform.js"></script>
+    
+        <!--Libreria de la nueva alerta-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    
+    <!-- CONFIGURACION TESTIMONIAL JS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            //ciclo
+            loop: true,
+
+            //margen entre las fotos de personas
+            margin: 12,
+
+            //navegacion con flechas con valor true
+            nav: true,
+
+            //agrega radios de navegacion con valor true
+            dots: false,
+
+            //se autoejecutan al iniciar con valor true
+            autoplay: true,
+
+            //parte responsive de los dispositivos
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+
+
+
+    <!-- CARGAS JS LIBRERIAS CONTADOR NUMERICO -->
+    <!-- velocidad del contador (main.js) linea 155aprox -->
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/jquery.animateNumber.min.js "></script>
+    <script src="js/bootstrap-datepicker.js "></script>
+    <script src="js/jquery.timepicker.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/scrollax.min.js "></script>
+
+    <!--Js principal que se puede editar -->
+    <script src="js/main.js "></script>
+
+    </body>
+</html>
