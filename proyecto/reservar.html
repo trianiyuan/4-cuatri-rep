@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/reservar.css">
     <link rel="stylesheet" href="css/reglas.css">
-    <link rel="icon" href="/proyecto/imagenes/faviconlogoinfinity.png">
+    <link rel="icon" href="imagenes/faviconlogoinfinity.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,8 +61,31 @@
 <body>
     <header class="container-fluid1 banner1">
         <h1 class="display-1 text-center text-white titulo1">INFINITY GAMING <span class="destacado">CENTER</span></h1>
-
     </header>
+
+    <section class="container-fluid4 text-center pt-3 pb-3">
+        <h2 class="text-white fugaz-one-regular">ON SALE!</h2>
+        <h3 class="text-white fugaz-one-regular">¡A LA VENTA SOLO POR TIEMPO LIMITADO!</h3>
+        <p class="text-white">Escoge el color o estilo de tu control favorito que mejor combina con vos.</p>
+        <iframe src="https://lottie.host/embed/fc0382a1-2227-4952-9d2b-b2358794253a/4TcYyTp2Hp.json"></iframe>
+
+        <div class="vehiculo">
+            <img id="vehiculo" src="imagenes/patrocinador.png" alt="vehiculo con color especifico" class="img-fluid inf">
+        </div>
+        <h4 class="text-white"> Seleccione el color favorito </h4>
+
+        <div class="col-12 mb-3">
+            <button class="btncirculos" style="background-color: #4902a7;" onclick="c1()"></button>
+            <button class="btncirculos" style="background-color: rgb(143, 143, 143);" onclick="c2()"></button>
+            <button class="btncirculos" style="background-color: rgb(58, 58, 58);" onclick="c3()"></button>
+            <button class="btncirculos" style="background-color: #c00000;" onclick="c4()"></button>
+            <button class="btncirculos" style="background-color: #eeeeee;" onclick="c5()"></button>
+            <button class="btncirculos" style="background-color: #000000;" onclick="c6()"></button>
+        </div>
+        <h5 id="color" class="text-white">CONTROLES DISPONIBLES EN VENTA</h5>
+
+    </section>
+
     <section class="sectionForm d-flex justify-content-center align-items-center py-4">
         <div class="containerForm">
             <h2 class="text-center titulo2 text-white fugaz-one-regular">RESERVAR</h2>
@@ -114,6 +137,14 @@
                             <input id="fechaTxt" type="date" name="date" required>
                             <span class="text text-white pb-4">Fecha para ir a jugar</span>
                             <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="formRow">
+                    <div class="colForm">
+                        <div class="inputBox">
+                            <p id="precioTxt" name="price" class="text text-white"></p> 
                         </div>
                     </div>
                 </div>
