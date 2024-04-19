@@ -110,10 +110,10 @@ function updateGames() {
     var gameSelect = document.getElementById("juegoTxt");
     var selectedConsole = consoleSelect.value;
     
-    // Limpiar las opciones anteriores
+    
     gameSelect.innerHTML = "";
     
-    // Agregar nuevas opciones según la consola seleccionada
+    
     switch (selectedConsole) {
         case "Nintendo Switch":
             addOption(gameSelect, "Seleccionar un juego:", "Seleccionar un juego:");
@@ -152,7 +152,6 @@ function updateGames() {
     }
 }
 
-// Función para agregar opciones a un elemento select
 function addOption(selectElement, text, value) {
     var option = document.createElement("option");
     option.textContent = text;
